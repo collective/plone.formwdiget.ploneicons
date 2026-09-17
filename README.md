@@ -2,6 +2,7 @@
     <h1 align="center">plone.formwidget.ploneicons</h1>
 </div>
 <div align="center">
+
 [![PyPI](https://img.shields.io/pypi/v/plone.formwidget.ploneicons)](https://pypi.org/project/plone.formwidget.ploneicons/)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/plone.formwidget.ploneicons)](https://pypi.org/project/plone.formwidget.ploneicons/)
 [![PyPI - Wheel](https://img.shields.io/pypi/wheel/plone.formwidget.ploneicons)](https://pypi.org/project/plone.formwidget.ploneicons/)

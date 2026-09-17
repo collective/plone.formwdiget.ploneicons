@@ -47,7 +47,7 @@ def test_bundle_registration(portal):
         if "plone.formwidget.ploneicons" in record:
             found = True
             break
-    # In some test environments, the registry might not have the record 
+    # In some test environments, the registry might not have the record
     # if it's filtered or if the profile application was partial in this layer.
     # We at least verify the registry is accessible.
     assert registry is not None

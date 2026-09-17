@@ -4,8 +4,6 @@ from plone.registry.interfaces import IRegistry
 from zope.component import getUtility
 from zope.schema.interfaces import IVocabularyFactory
 
-import pytest
-
 
 def test_vocabulary_registration(portal):
     factory = getUtility(IVocabularyFactory, name="plone.formwidget.ploneicons.Icons")

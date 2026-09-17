@@ -3,8 +3,6 @@ from plone.formwidget.ploneicons.widget import PloneIconsWidget
 from plone.registry.interfaces import IRegistry
 from zope.component import getUtility
 
-import pytest
-
 
 def test_widget_implementation(http_request):
     widget = PloneIconsWidget(http_request)

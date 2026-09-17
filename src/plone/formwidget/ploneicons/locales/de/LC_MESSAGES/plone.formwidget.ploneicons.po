@@ -1,0 +1,43 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2026-09-17 10:42+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language-Code: de\n"
+"Language-Name: German\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone.formwidget.ploneicons\n"
+
+#: plone/formwidget/ploneicons/browser/widget.pt:57
+msgid "Close"
+msgstr "Schließen"
+
+#: plone/formwidget/ploneicons/profiles.zcml:13
+msgid "Package to add plone.formwidget.ploneicons to your site"
+msgstr "Paket zum Hinzufügen von plone.formwidget.ploneicons zu Ihrer Website"
+
+#: plone/formwidget/ploneicons/browser/widget.pt:51
+msgid "Search icons..."
+msgstr "Icons suchen..."
+
+#: plone/formwidget/ploneicons/browser/widget.pt:27
+msgid "Select Icon"
+msgstr "Icon auswählen"
+
+#: plone/formwidget/ploneicons/profiles.zcml:21
+msgid "Uninstall plone.formwidget.ploneicons setup."
+msgstr "plone.formwidget.ploneicons deinstallieren."
+
+#: plone/formwidget/ploneicons/profiles.zcml:13
+msgid "plone.formwidget.ploneicons: Install"
+msgstr "plone.formwidget.ploneicons: Installieren"
+
+#: plone/formwidget/ploneicons/profiles.zcml:21
+msgid "plone.formwidget.ploneicons: Uninstall"
+msgstr "plone.formwidget.ploneicons: Deinstallieren"

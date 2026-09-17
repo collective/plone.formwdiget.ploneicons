@@ -1,0 +1,32 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="plone.formwidget.ploneicons"
+    >
+
+  <genericsetup:registerProfile
+      name="default"
+      title="plone.formwidget.ploneicons: Install"
+      description="Package to add plone.formwidget.ploneicons to your site"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/default"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="plone.formwidget.ploneicons: Uninstall"
+      description="Uninstall plone.formwidget.ploneicons setup."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/uninstall"
+      />
+
+  <!-- Hide Uninstall Profile-->
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="plone.formwidget.ploneicons"
+      />
+
+
+  <include package=".upgrades" />
+
+</configure>

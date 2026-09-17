@@ -1,0 +1,87 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      tal:define="
+        icons python:context.restrictedTraverse('@@iconresolver');
+      "
+      tal:omit-tag=""
+      i18n:domain="plone.formwidget.ploneicons"
+>
+  <div class="input-group plone-icons-widget-wrapper pat-plone-icon-selector"
+       tal:attributes="
+         data-base-url context/absolute_url;
+       "
+  >
+    <span class="input-group-text icon-preview">
+      <span tal:replace="structure python:icons.tag(view.value)"></span>
+    </span>
+    <input type="text"
+           tal:attributes="
+             name view/name;
+             id view/id;
+             value view/value;
+             class string:form-control ${view/klass};
+             placeholder view/placeholder;
+           "
+    />
+    <button class="btn btn-primary icon-selector-button"
+            type="button"
+            tal:attributes="
+              data-bs-toggle string:modal;
+              data-bs-target string:#icon-modal-${view/id};
+            "
+            i18n:translate=""
+    >
+    Select Icon
+    </button>
+  </div>
+
+  <div class="modal fade"
+       aria-hidden="true"
+       tabindex="-1"
+       tal:attributes="
+         id string:icon-modal-${view/id};
+       "
+  >
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header d-flex align-items-center">
+          <div class="input-group me-3">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input class="form-control pat-plone-icon-search"
+                   placeholder="Search icons..."
+                   type="text"
+                   i18n:attributes="placeholder"
+            />
+          </div>
+          <button class="btn-close"
+                  aria-label="Close"
+                  type="button"
+                  data-bs-dismiss="modal"
+                  i18n:attributes="aria-label"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <div class="row row-cols-auto g-2 justify-content-center icon-grid">
+            <div class="col"
+                 tal:repeat="icon view/icons"
+            >
+              <button class="btn btn-outline-secondary icon-select-button"
+                      type="button"
+                      data-bs-dismiss="modal"
+                      tal:attributes="
+                        data-icon icon;
+                        title icon;
+                      "
+              >
+                <span tal:replace="structure python:icons.tag(icon)"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</html>
+

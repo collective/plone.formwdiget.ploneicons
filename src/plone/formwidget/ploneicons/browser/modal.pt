@@ -1,0 +1,32 @@
+<div class="icon-selector-modal h-100 d-flex flex-column">
+  <div class="modal-header flex-shrink-0">
+    <div class="input-group">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input class="form-control pat-plone-icon-search"
+             aria-label="Search icons"
+             placeholder="Search icons..."
+             type="text"
+      />
+    </div>
+  </div>
+  <div class="modal-body flex-grow-1 overflow-auto">
+    <div class="row row-cols-auto g-2 justify-content-center icon-grid">
+      <div class="col"
+           tal:repeat="icon view/icons"
+      >
+        <button class="btn btn-outline-secondary icon-select-button"
+                type="button"
+                data-bs-toggle="tooltip"
+                tal:attributes="
+                  data-icon icon;
+                  title icon;
+                "
+        >
+          <i tal:attributes="
+               class string:bi bi-${icon};
+             "></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

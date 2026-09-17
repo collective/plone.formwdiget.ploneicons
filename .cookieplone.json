@@ -1,0 +1,14 @@
+{
+    "title": "plone.formwidget.ploneicons",
+    "description": "A widget for Plone that shows all available plone icons and can be selected to save its value in a field",
+    "author": "Mikel Larreategi",
+    "email": "mlarreategi@codesyntax.com",
+    "github_organization": "collective",
+    "use_prerelease_versions": "No",
+    "plone_version": "6.2.2",
+    "python_package_name": "plone.formwidget.ploneicons",
+    "feature_headless": false,
+    "initialize_ci": true,
+    "initialize_documentation": true,
+    "__template__": "backend_addon"
+}

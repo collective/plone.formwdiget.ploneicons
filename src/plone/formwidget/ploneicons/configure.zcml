@@ -27,10 +27,10 @@
 
   <adapter factory=".widget.PloneIconsFieldWidget" />
 
-  <interface
+  <!-- <interface
       interface=".interfaces.IPloneIconsWidget"
       type="z3c.form.interfaces.IWidget"
-      />
+      /> -->
 
   <z3c:widgetTemplate
       widget=".interfaces.IPloneIconsWidget"

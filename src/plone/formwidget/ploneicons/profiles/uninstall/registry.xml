@@ -5,7 +5,8 @@
 
   <!-- -*- extra stuff goes here -*- -->
 
-  <records prefix="plone.bundles/plone-formwidget-ploneicons"
+  <records interface="Products.CMFPlone.interfaces.IBundleRegistry"
+           prefix="plone.bundles/plone-formwidget-ploneicons"
            remove="true"
   >
 

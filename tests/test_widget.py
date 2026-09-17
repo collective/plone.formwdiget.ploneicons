@@ -40,12 +40,4 @@ def test_widget_get_icon(portal, http_request):
 def test_bundle_registration(portal):
     registry = getUtility(IRegistry)
     # The record should exist after profile application
-    found = False
-    for record in registry.records:
-        if "plone.formwidget.ploneicons" in record:
-            found = True
-            break
-    # In some test environments, the registry might not have the record
-    # if it's filtered or if the profile application was partial in this layer.
-    # We at least verify the registry is accessible.
-    assert registry is not None
+    assert "plone.bundles/plone-formwidget-ploneicons.resources" in registry

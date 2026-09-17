@@ -9,6 +9,13 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.0a2 (2026-09-17)
+
+
+### Internal
+
+- Tests and update supported Plone version @erral 
+
 ## 1.0.0a1 (2026-09-17)
 
 No significant changes.
